@@ -225,7 +225,7 @@ header {
 }
 
 .header_nav__strip {
-  background-image: url(../assets/KavaKoru_bartop.jpeg);
+  background-image: url("./assets/KavaKoru_bartop.jpeg");
   background-size: cover;
   min-height: calc(100vh - 40px);
   /* opacity: 0.7; */
