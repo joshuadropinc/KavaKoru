@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/8685c41807.js"></script>
+    <title>Kava Koru</title>
+  </head>
+  <body>
+    <header>
+      <section class="header_info__strip">
+        <div class="header__info--wrapper">
+          <div class="header__location--wrapper">
+            <i class="fa-solid fa-location-pin"></i>
+            <div class="header__address">
+              1722 St Michaels Dr, Suite H, Santa Fe, NM 87505
+            </div>
+          </div>
+
+          <div class="instagram__link">
+            <i class="fa-brands fa-instagram"></i>
+            <a
+              href="https://www.instagram.com/kavakoru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @kavakoru
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="header_nav__strip">
+        <div class="header__nav--wrapper">
+          <figure class="header__logo">
+            <img
+              src="assets/KavaKoru_Logo.jpeg"
+              alt="Kava Koru Logo"
+              class="header__logo--img"
+            />
+          </figure>
+          <nav class="header__nav">
+            <ul class="header__nav--list">
+              <li class="header__nav--item">
+                <a href="#about">About</a>
+              </li>
+              <li class="header__nav--item">
+                <a href="#events">Events</a>
+              </li>
+              <li class="header__nav--item">
+                <a href="#menu">Menu</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__description">
+          <h1 class="header__title">Kava Koru</h1>
+          <h3 class="header__subtitle">
+            Santa Fe alcohol-alternative bar and lounge serving kava, botanical
+            teas, and mocktails in a community-focused setting with live music,
+            dancing, games, and late-night events.
+          </h3>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <div class="about__inner">
+          <p class="about__eyebrow">Welcome to Kava Koru</p>
+          <h2 class="about__title">About Us</h2>
+          <p class="about__description">
+            Kava Koru is a Santa Fe-based alcohol-alternative bar and lounge
+            that serves kava, botanical teas, and mocktails in a
+            community-focused setting. We offer live music, dancing, games, and
+            late-night events for those seeking a unique social experience
+            without the effects of alcohol.
+          </p>
+        </div>
+      </section>
+      <section class="events" id="events">
+        <div class="events__inner">
+          <p class="events__eyebrow">Gather at Kava Koru</p>
+          <h2 class="events__title">Upcoming Events</h2>
+          <div class="events__list" id="events-list" aria-live="polite">
+            <p class="events__status">Loading upcoming events...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./events-config.js"></script>
+    <script src="./events.js" defer></script>
+  </body>
+</html>
