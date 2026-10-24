@@ -12,20 +12,29 @@
       <section class="header_info__strip">
         <div class="header__info--wrapper">
           <div class="header__location--wrapper">
-            <i class="fa-solid fa-location-pin"></i>
-            <div class="header__address">
-              1722 St Michaels Dr, Suite H, Santa Fe, NM 87505
-            </div>
+            <a
+              class="header__link"
+              href="https://www.google.com/maps/place/Kava+Koru+Alcohol-Alternative+Bar+%26+Lounge/@35.6580294,-106.1245023,29405m/data=!3m1!1e3!4m6!3m5!1s0x87185bb4e4a9739d:0x23ee423e3043303f!8m2!3d35.6580294!4d-105.972067!16s%2Fg%2F11ym7yn4pk?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Get directions to Kava Koru on Google Maps"
+            >
+              <i class="fa-solid fa-location-pin" aria-hidden="true"></i>
+              <div class="header__address">
+                1722 St Michaels Dr, Suite H, Santa Fe, NM 87505
+              </div>
+            </a>
           </div>
 
-          <div class="instagram__link">
-            <i class="fa-brands fa-instagram"></i>
+          <div class="header__link">
             <a
               href="https://www.instagram.com/kavakoru/"
+              aria-label="Visit Kava Koru on Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @kavakoru
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span>@kavakoru</span>
             </a>
           </div>
         </div>
@@ -39,7 +48,18 @@
               class="header__logo--img"
             />
           </figure>
-          <nav class="header__nav">
+          <button
+            class="header__nav-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="header__nav" id="primary-navigation">
             <ul class="header__nav--list">
               <li class="header__nav--item">
                 <a href="#about">About</a>
@@ -87,7 +107,61 @@
           </div>
         </div>
       </section>
+      <section class="menu" id="menu">
+        <div class="menu__inner">
+          <p class="menu__eyebrow">Sip something different</p>
+          <h2 class="menu__title">Our Menu</h2>
+          <p class="menu__message">
+            Our menu is being refreshed. Check back soon for Kava, botanical
+            teas, and mocktails.
+          </p>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <p class="site-footer__name">Kava Koru</p>
+          <p class="site-footer__tagline">A place to gather in Santa Fe.</p>
+        </div>
+
+        <div class="site-footer__contact">
+          <h2 class="site-footer__heading">Visit</h2>
+          <a
+            href="https://www.google.com/maps/place/Kava+Koru+Alcohol-Alternative+Bar+%26+Lounge/@35.6580294,-106.1245023,29405m/data=!3m1!1e3!4m6!3m5!1s0x87185bb4e4a9739d:0x23ee423e3043303f!8m2!3d35.6580294!4d-105.972067!16s%2Fg%2F11ym7yn4pk?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            1722 St Michaels Dr, Suite H<br />
+            Santa Fe, NM 87505
+          </a>
+        </div>
+
+        <div class="site-footer__links">
+          <h2 class="site-footer__heading">Explore</h2>
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#menu">Menu</a>
+        </div>
+
+        <div class="site-footer__social">
+          <h2 class="site-footer__heading">Follow</h2>
+          <a
+            href="https://www.instagram.com/kavakoru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Kava Koru on Instagram"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            @kavakoru
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© Kava Koru</p>
+      </div>
+    </footer>
+    <script src="./nav.js" defer></script>
     <script src="./events-config.js"></script>
     <script src="./events.js" defer></script>
   </body>
